@@ -1,0 +1,22 @@
+# StyleSync — dependências do projeto
+# Versões mínimas, derivadas do que o código realmente usa.
+# Para fixar nas versões exatas do seu ambiente, veja a nota no final.
+
+# --- API ---
+Flask>=3.0
+pymongo>=4.6
+
+# --- validação e modelos ---
+pydantic>=2.5
+
+# --- autenticação ---
+PyJWT>=2.8
+
+# --- variáveis de ambiente ---
+python-dotenv>=1.0
+
+# --- testes ---
+pytest>=9.1.1
+
+# Para gerar a versão travada (pinned) a partir do seu ambiente:
+#   pip freeze > requirements-lock.txt

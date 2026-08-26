@@ -144,7 +144,7 @@ def upload_sales(token):
     if file.filename == '':
         return jsonify({'error':'Nenhum arquivo foi selecionado'}),400
 
-    if file and file.name.endswith('.csv'):
+    if file and file.filename.endswith('.csv'):
         csv_stream = io.StringIO(file.stream.read().decode('UTF-8'),newline=None)
         # trata cada linha do csv como dicionario pra pegar as chaves do dic
         csv_reader = csv.DictReader(csv_stream)
